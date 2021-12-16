@@ -1,0 +1,3 @@
+/home/spencer/github/slideshow-photo-frame/build/CMakeFiles/rebuild_cache.dir
+/home/spencer/github/slideshow-photo-frame/build/CMakeFiles/edit_cache.dir
+/home/spencer/github/slideshow-photo-frame/build/CMakeFiles/SSPF.dir

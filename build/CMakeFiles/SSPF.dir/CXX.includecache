@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/spencer/github/slideshow-photo-frame/main.cpp
+string
+-
+iostream
+-
+filesystem
+-
+vector
+-
+opencv2/opencv.hpp
+-
+
