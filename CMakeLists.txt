@@ -1,5 +1,8 @@
 cmake_minimum_required(VERSION 3.16.3)
-
-project(SSPF)
-
+project(picture_frame)
+find_package(OpenCV REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIRS})
 add_executable(${PROJECT_NAME} main.cpp)
+target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS})
+#set_property(TARGET tgt PROPERTY CXX_STANDARD 17)
+target_compile_features(${PROJECT_NAME} PUBLIC cxx_std_17)

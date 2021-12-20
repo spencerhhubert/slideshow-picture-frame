@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = /home/spencer/github/slideshow-photo-frame/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/SSPF.dir/all
+all: CMakeFiles/picture_frame.dir/all
 
 .PHONY : all
 
@@ -63,36 +63,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/SSPF.dir/clean
+clean: CMakeFiles/picture_frame.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/SSPF.dir
+# Target rules for target CMakeFiles/picture_frame.dir
 
 # All Build rule for target.
-CMakeFiles/SSPF.dir/all:
-	$(MAKE) -f CMakeFiles/SSPF.dir/build.make CMakeFiles/SSPF.dir/depend
-	$(MAKE) -f CMakeFiles/SSPF.dir/build.make CMakeFiles/SSPF.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/spencer/github/slideshow-photo-frame/build/CMakeFiles --progress-num=1,2 "Built target SSPF"
-.PHONY : CMakeFiles/SSPF.dir/all
+CMakeFiles/picture_frame.dir/all:
+	$(MAKE) -f CMakeFiles/picture_frame.dir/build.make CMakeFiles/picture_frame.dir/depend
+	$(MAKE) -f CMakeFiles/picture_frame.dir/build.make CMakeFiles/picture_frame.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/spencer/github/slideshow-photo-frame/build/CMakeFiles --progress-num=1,2 "Built target picture_frame"
+.PHONY : CMakeFiles/picture_frame.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/SSPF.dir/rule: cmake_check_build_system
+CMakeFiles/picture_frame.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/spencer/github/slideshow-photo-frame/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/SSPF.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/picture_frame.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/spencer/github/slideshow-photo-frame/build/CMakeFiles 0
-.PHONY : CMakeFiles/SSPF.dir/rule
+.PHONY : CMakeFiles/picture_frame.dir/rule
 
 # Convenience name for target.
-SSPF: CMakeFiles/SSPF.dir/rule
+picture_frame: CMakeFiles/picture_frame.dir/rule
 
-.PHONY : SSPF
+.PHONY : picture_frame
 
 # clean rule for target.
-CMakeFiles/SSPF.dir/clean:
-	$(MAKE) -f CMakeFiles/SSPF.dir/build.make CMakeFiles/SSPF.dir/clean
-.PHONY : CMakeFiles/SSPF.dir/clean
+CMakeFiles/picture_frame.dir/clean:
+	$(MAKE) -f CMakeFiles/picture_frame.dir/build.make CMakeFiles/picture_frame.dir/clean
+.PHONY : CMakeFiles/picture_frame.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

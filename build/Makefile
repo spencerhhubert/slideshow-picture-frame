@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named SSPF
+# Target rules for targets named picture_frame
 
 # Build rule for target.
-SSPF: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 SSPF
-.PHONY : SSPF
+picture_frame: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 picture_frame
+.PHONY : picture_frame
 
 # fast build rule for target.
-SSPF/fast:
-	$(MAKE) -f CMakeFiles/SSPF.dir/build.make CMakeFiles/SSPF.dir/build
-.PHONY : SSPF/fast
+picture_frame/fast:
+	$(MAKE) -f CMakeFiles/picture_frame.dir/build.make CMakeFiles/picture_frame.dir/build
+.PHONY : picture_frame/fast
 
 main.o: main.cpp.o
 
@@ -129,7 +129,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/SSPF.dir/build.make CMakeFiles/SSPF.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/picture_frame.dir/build.make CMakeFiles/picture_frame.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -138,7 +138,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/SSPF.dir/build.make CMakeFiles/SSPF.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/picture_frame.dir/build.make CMakeFiles/picture_frame.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -147,7 +147,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/SSPF.dir/build.make CMakeFiles/SSPF.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/picture_frame.dir/build.make CMakeFiles/picture_frame.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -158,7 +158,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... SSPF"
+	@echo "... picture_frame"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
