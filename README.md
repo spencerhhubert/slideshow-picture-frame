@@ -1,4 +1,4 @@
-# slideshow-photo-frame
+# slideshow-picture-frame
 
 it's for a photo frame, except instead of a photo, there's a screen that does a slideshow.
 
