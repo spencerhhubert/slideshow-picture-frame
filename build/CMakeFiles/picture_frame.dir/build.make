@@ -60,15 +60,15 @@ include CMakeFiles/picture_frame.dir/flags.make
 CMakeFiles/picture_frame.dir/main.cpp.o: CMakeFiles/picture_frame.dir/flags.make
 CMakeFiles/picture_frame.dir/main.cpp.o: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/spencer/github/slideshow-photo-frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/picture_frame.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/picture_frame.dir/main.cpp.o -c /home/spencer/github/slideshow-photo-frame/main.cpp
+	arm-linux-gnueabi-g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/picture_frame.dir/main.cpp.o -c /home/spencer/github/slideshow-photo-frame/main.cpp
 
 CMakeFiles/picture_frame.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/picture_frame.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/spencer/github/slideshow-photo-frame/main.cpp > CMakeFiles/picture_frame.dir/main.cpp.i
+	arm-linux-gnueabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/spencer/github/slideshow-photo-frame/main.cpp > CMakeFiles/picture_frame.dir/main.cpp.i
 
 CMakeFiles/picture_frame.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/picture_frame.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/spencer/github/slideshow-photo-frame/main.cpp -o CMakeFiles/picture_frame.dir/main.cpp.s
+	arm-linux-gnueabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/spencer/github/slideshow-photo-frame/main.cpp -o CMakeFiles/picture_frame.dir/main.cpp.s
 
 # Object files for target picture_frame
 picture_frame_OBJECTS = \

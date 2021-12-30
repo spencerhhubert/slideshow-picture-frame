@@ -1,8 +1,7 @@
 #include <string>
 #include <iostream>
-#include <filesystem>
 #include <vector>
-
+#include <filesystem>
 #include <opencv2/opencv.hpp>
 #include <opencv2/core.hpp>
 #include <opencv2/imgcodecs.hpp>
@@ -97,31 +96,33 @@ cv::Mat box(cv::Mat img, int res_w, int res_h) {
 	return output;
 }
 
-int main() {
+int main(){
 	int res_w = 3440;
 	int res_h = 1440;
-	std::string dir = "pictures";
-	std::vector <std::string> file_names = get_files(dir);
-
-	for(int i=0; i<file_names.size()-1; i++) {
-		cv::Mat img = cv::imread(addDir(dir, file_names[i]), cv::IMREAD_COLOR);
-		img = box(img, res_w, res_h);
-		cv::Mat next_img = cv::imread(addDir(dir, file_names[i+1]), cv::IMREAD_COLOR);
-		next_img = box(next_img, res_w, res_h);
-		//print_size(img);
-
-		cv::namedWindow("window", cv::WND_PROP_FULLSCREEN);
-		cv::setWindowProperty("window",cv::WND_PROP_FULLSCREEN, cv::WINDOW_FULLSCREEN);
+	std::string dir = "/media/spencer/pictures";
+	while(true){
 		
-		cv::imshow("window", img);
-		cv::waitKey(500);
-		if(i<file_names.size()-1){
-			fade(img, next_img, "window");
+		std::vector <std::string> file_names = get_files(dir);
+		for(int i=0; i<file_names.size()-1; i++) {
+			cv::Mat img = cv::imread(addDir(dir, file_names[i]), cv::IMREAD_COLOR);
+			img = box(img, res_w, res_h);
+			cv::Mat next_img = cv::imread(addDir(dir, file_names[i+1]), cv::IMREAD_COLOR);
+			next_img = box(next_img, res_w, res_h);
+			//print_size(img);
+
+			cv::namedWindow("window", cv::WND_PROP_FULLSCREEN);
+			cv::setWindowProperty("window",cv::WND_PROP_FULLSCREEN, cv::WINDOW_FULLSCREEN);
+			
+			cv::imshow("window", img);
+			cv::waitKey(500);
+			if(i<file_names.size()-1){
+				fade(img, next_img, "window");
+			}
+			cv::waitKey(500);
+			//std::cout << "next: \n\n";
+			//mat_deets(img);
 		}
-		cv::waitKey(500);
-		//std::cout << "next: \n\n";
-		//mat_deets(img);
+		cv::destroyWindow("window");
 	}
-	cv::destroyWindow("window");
 	return 0;
 }
